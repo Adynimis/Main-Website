@@ -1,0 +1,185 @@
+/* Main Elements */
+html {
+  font-size: 1.25rem;
+}
+body  {
+  font-family: Arial;
+  word-wrap: break-word;
+  background-color: #ebf2ff;
+  background-image: url(img/background.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+}
+img {
+  width: 100%;
+}
+h2 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+
+footer {
+  margin: 10% 15px;
+}
+p {
+  padding: 0px 10px;
+}
+/* Classes */
+
+.container {
+  text-align: center;
+  position: relative;
+  background: url(knik-1633949011868-5969.jpg) center / cover no-repeat teal;
+  background-blend-mode: multiply;
+
+}
+
+}
+.info-tiles {
+  background-color: #78bdc4;
+  padding: 0px 0px 80px;
+  margin-top: 15rem;
+
+}
+
+.info {
+  border: 2px steelblue solid;
+  border-radius: 10px;
+  width: 90%;
+  background-color: #f0f1f2;
+  margin: 10% 5% 20px;
+  box-shadow: 10px 15px #2d7aba;
+}
+
+.about-me  {
+  line-height: 1.5;
+  margin: 10% 0px;
+
+  padding: 0px 10%;
+
+}
+.pfp {
+  width: 100%;
+  margin: 20% 30% 0px 0px ;
+  padding: 30px 20px;
+
+}
+.title-text{
+  position: absolute;
+  text-align: center;
+  color: ghostwhite;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.contact-me{
+  margin: 3rem 20%;
+  box-shadow: 10px 15px teal;
+  text-align: center;
+  border: 2px steelblue solid;
+  border-radius: 10px;
+  background-color: #f0f1f2;
+}
+
+/*-------------- IDs ---------------------------*/
+#title{
+
+  height: 500px;
+  width: 100%;
+  margin-bottom: 4rem;
+
+}
+
+#skills {
+  text-align: center;
+}
+ #aboutme  {
+  margin: 3rem 20%;
+  box-shadow: 10px 15px teal;
+  text-align: center;
+  border: 2px steelblue solid;
+  border-radius: 10px;
+  background-color: #f0f1f2;
+}
+
+#aboutme-p, footer {
+  margin: 10px 15px;
+  padding: 10px 10px;
+  background-color: rgba(240, 241, 242, 1);
+  border-radius: 20px;
+  border: 2px steelblue solid;
+
+  box-shadow: 10px 15px #2d7aba;
+
+
+}
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 0px 10px 20px;
+  border-bottom: black 4px solid;
+
+
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: left;
+  padding: 12px;
+  text-decoration: none;
+  font-size: .5rem;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Media Queries*/
+
+@media screen and (min-width: 420px){
+  li {
+    display: inline-block;
+    }
+  .info-tiles {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header a {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1281px){
+  .about-me {
+    width: 1000px;
+    margin: auto;
+  }
+}
