@@ -5,4 +5,4 @@ am working on while learning Web Dev. I plan on making updates to the code over 
 but i am glad im on here to begin with. </p>
 <br>
 <br>
-<p> you can view the most recent version of this project at http://dakotalee.infinityfreeapp.com/ </p>
+<p> you can view the most recent version of this project at http://dakota-lee.dev/ </p>
