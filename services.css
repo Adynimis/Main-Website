@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Mukta:wght@500&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+
+}
+
+li, a, button {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+
+}
+/* FOOTER STYLES */
+footer {
+  display: flex;
+  opacity: 0;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .6rem;
+  text-shadow: none;
+  animation-name: fadeInAnimation;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+.footerLinks {
+  list-style: none;
+}
+.footerLinks li {
+  display: inline-block;
+  padding: 0px 20px;
+  font-size: .6rem;
+}
+/* ------------------------ */
+body {
+  background-color: #24252a;
+  font-family: Mukta, sans-serif;
+  color: #edf0f1;
+  opacity: 0;
+  animation-name: fadeInAnimation;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.dark-mode {
+  background-color: #edf0f1;
+  color: #24252a;
+}
+div, h3 {
+  background-color: rgba(70, 72, 82, 0.0);
+  padding: 0 2vh;
+}
+h1 {
+  background-color: rgba(70, 72, 82, 0.0);
+}
+h3 > a {
+  background-color: rgba(70, 72, 82, 0.0);
+  text-decoration: none;
+  font-weight: 700;
+  color: rgba(147, 160, 181, 0.8);
+
+}
+@keyframes fadeInAnimation {
+  0% {opacity: 0; }
+  100% {opacity: 1; }
+}
+header {
+  display: flex;
+  opacity: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  animation-name: fadeInAnimation;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+
+}
+.logo{
+    color: #edf0f1;
+    letter-spacing: 5px;
+}
+.icon {
+  max-width: 20%;
+  margin: auto;
+
+}
+.navLinks {
+  list-style: none;
+}
+
+.navLinks li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.navLinks li a {
+  transition: all 0.3s ease 0s;
+}
+
+.navLinks li a:hover {
+color: #0088a9;
+}
+
+.theme {
+  max-width: 40px;
+  border: none;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  background-color: #24252a;
+}
+.theme:hover {
+  filter: opacity(0.7);
+}
+button {
+  border: none;
+  background-color: #24252a;
+}
+
+.contactMe {
+ border: none;
+ padding: 9px 25px;
+ background-color: rgba(0, 136, 169, 1);
+ border-radius: 50px;
+ cursor: pointer;
+ transition: all 0.3s ease 0s;
+}
+
+.contactMe:hover {
+    background-color: rgba(0, 136, 169, 0.7);
+}
+
+
+
+.gridContainer {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: .5fr;
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+.gridItem {
+  display: inline-grid;
+  justify-content: center;
+  align-items: center;
+  max-height: 120px;
+  background-color: rgba(70, 72, 82, 0.6);
+  border-radius: 5px;
+
+
+}
+.heading {
+  grid-column: 1 / -1;
+  font-size: 3rem;
+  background-color: #24252a;
+  padding: 2rem 2rem;
+  margin: 10% 0;
+}
+.headingText {
+
+}
+.heading h1 {
+  background-color: #24252a;
+}
+
+.serviceDescRight {
+  grid-column: 2 /-1;
+  margin-right: 3rem;
+}
+.serviceLeft {
+  grid-column: 1 / 2;
+  margin-left: 3rem;
+  text-align: center;
+}
+.serviceRight {
+  grid-column: 4 / -1;
+  margin-right: 3rem;
+  text-align: center;
+}
+.serviceDescLeft {
+  grid-column: 1 / 4;
+  margin-left: 3rem;
+}
+.smallDesc{
+  background-color: rgba(0, 136, 169, 1);
+}
+
+.bigDesc {
+
+}

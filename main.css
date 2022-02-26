@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Mukta:wght@500&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #24252a;
+
+}
+
+li, a, button {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+
+}
+.cta {
+
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+body {
+  font-family: Mukta, sans-serif;
+}
+.dark-mode {
+  background-color: #edf0f1;
+  color: #24252a;
+}
+@keyframes fadeInAnimation {
+  0% {opacity: 0; }
+  100% {opacity: 1; }
+}
+header {
+  display: flex;
+  opacity: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  animation-name: fadeInAnimation;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+
+}
+footer {
+  display: flex;
+  opacity: 0;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .6rem;
+  text-shadow: none;
+  animation-name: fadeInAnimation;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+.footerLinks {
+  list-style: none;
+}
+.footerLinks li {
+  display: inline-block;
+  padding: 0px 20px;
+  font-size: .6rem;
+}
+.theme {
+  max-width: 40px;
+  border: none;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+.theme:hover {
+  filter: opacity(0.7);
+}
+.logo{
+    color: #edf0f1;
+    letter-spacing: 5px;
+}
+.icon {
+  max-width: 20%;
+  margin: auto;
+}
+
+.navLinks {
+  list-style: none;
+}
+
+.navLinks li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.navLinks li a {
+  transition: all 0.3s ease 0s;
+}
+
+.navLinks li a:hover {
+color: #0088a9;
+}
+
+.gridContainer{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 90vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr .3fr;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  color: #edf0f1;
+}
+.gridItem {
+  display: inline-grid;
+  align-items: center;
+  padding: 20px 1rem;
+  justify-content: center;
+
+
+}
+
+
+#gridItem1 {
+  opacity: 0;
+  justify-content: center;
+  grid-column: 1 / -1;
+  margin: 2rem 0;
+  animation-name: fadeInAnimation;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+
+}
+
+#gridItem2 {
+  margin-left: 2rem;
+  opacity: 0;
+  animation-name: fadeInAnimation;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+
+}
+#gridItem3 {
+  opacity: 0;
+  animation-name: fadeInAnimation;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-delay: 3.75s;
+  animation-fill-mode: forwards;
+
+}
+#gridItem4 {
+  margin-right: 2rem;
+  opacity: 0;
+  animation-name: fadeInAnimation;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-delay: 4.5s;
+  animation-fill-mode: forwards;
+
+}
+#gridItem5 {
+  grid-column: 1 / -1;
+
+
+}
+#gridItem2::before {
+  opacity: 0;
+}
+
+button {
+  border: none;
+}
+
+.contactMe {
+ border: none;
+ padding: 9px 25px;
+ background-color: rgba(0, 136, 169, 1);
+ border-radius: 50px;
+ cursor: pointer;
+ transition: all 0.3s ease 0s;
+}
+
+.contactMe:hover {
+    background-color: rgba(0, 136, 169, 0.7);
+}
